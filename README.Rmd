@@ -31,8 +31,14 @@ knitr::opts_chunk$set(
 
 你可以从 GitHub 上安装这个 R 包：
 
-``` r
+```r
 devtools::install_github('r-stata/rstatatools')
+```
+
+Gitee: 
+
+```r
+devtools::install_git('https://gitee.com/tidyfriday/rstatatools.git')
 ```
 
 ## 使用介绍

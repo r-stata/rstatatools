@@ -28,6 +28,12 @@ R
 devtools::install_github('r-stata/rstatatools')
 ```
 
+Gitee:
+
+``` r
+devtools::install_git('https://gitee.com/tidyfriday/rstatatools.git')
+```
+
 ## 使用介绍
 
 > 注意：geoqmap()、cntrade()、plotstock() 不再能使用了。
