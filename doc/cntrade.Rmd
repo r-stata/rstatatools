@@ -1,0 +1,33 @@
+---
+title: "Get and Visualize Stock Data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Get and Visualize Stock Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rstatatools)
+```
+
+## Get
+
+```{r}
+cntrade(1, "stock")
+cntrade(2, "index")
+```
+
+## Visualize
+
+```{r}
+plotstock(1, "stock")
+plotstock(2, "index")
+```

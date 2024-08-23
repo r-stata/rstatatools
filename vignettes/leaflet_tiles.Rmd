@@ -1,0 +1,62 @@
+---
+title: "Some leaflet tiles"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Some leaflet tiles}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rstatatools)
+```
+
+## Tiandi Map
+
+locsf is a sf class object.
+
+```{r}
+library(leaflet)
+library(leafem)
+library(rstatatools)
+library(sf)
+leaflet() %>%
+  tdtmap(type = "terrain") %>%
+  addFeatures(locsf, weight = 0.1, radius = 0.1)
+```
+
+To add annotion on Tiandi map, use:
+
+```{r}
+leaflet() %>%
+  tdtmap(type = "terrain") %>%
+  tdtmap_annotion() %>% 
+  addFeatures(locsf, weight = 0.1, 
+              radius = 0.1, color = "red")
+```
+
+## GaoDe Map
+
+```{r}
+leaflet() %>%
+  gdmap() %>%
+  addFeatures(locsf, weight = 0.1, 
+              radius = 0.1, color = "red")
+```
+
+Annotion:
+
+```{r}
+leaflet() %>%
+  gdmap(type = "satellite") %>%
+  gdmap_annotion() %>% 
+  addFeatures(locsf, weight = 0.1, 
+              radius = 0.1, color = "red")
+```

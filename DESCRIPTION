@@ -1,0 +1,29 @@
+Package: rstatatools
+Type: Package
+Title: Just for RStata
+Version: 0.1.0
+Authors@R: person("RStata", role = c("aut", "cre"), email = "czxjnu@163.com")
+Description: Just for RStata
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    stringr,
+    dplyr,
+    jsonlite,
+    magrittr,
+    purrr,
+    readr,
+    leaflet,
+    leafem,
+    sf,
+    magick,
+    tokenizers,
+    jiebaR
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
