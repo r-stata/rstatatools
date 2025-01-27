@@ -2,6 +2,7 @@
 
 export(GCJ02_WGS84)
 export(addrswm)
+export(addrswm2)
 export(cn_ngrams)
 export(cnseg_tokenfun)
 export(cntrade)
